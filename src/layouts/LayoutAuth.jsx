@@ -12,7 +12,7 @@ export default function LayoutAuth() {
                     <div className="absolute -bottom-32 right-12 h-[26rem] w-[26rem] rounded-full bg-[#83cbfc]"></div>
                 </div>
                 
-                <div className="absolute inset-y-0 right-0 w-1/2 bg-[#fbfbf6] -z-10"></div>
+                <div className="absolute inset-y-0 right-0 w-1/2 bg-[#FFFFED] -z-10"></div>
 
                 <div className="relative z-10 flex w-full">
                     <Outlet />

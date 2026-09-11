@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 export default function Register() {
     return (
         <>
@@ -52,6 +53,14 @@ export default function Register() {
                             />
                         </div>
 
+                        <input
+                            type="text"
+                            id="usuario"
+                            name="usuario"
+                            placeholder="Usuario"
+                            required
+                            className="w-full rounded-full border border-gray-100 bg-white px-6 py-4 text-gray-700 shadow-[0_4px_20px_rgba(0,0,0,0.04)] outline-none transition-all focus:border-gray-300 focus:shadow-md"
+                        />
 
                         <input
                             type="text"
@@ -123,12 +132,12 @@ export default function Register() {
                         </div>
 
 
-                        <button
-                            type="submit"
-                            className="mt-6 w-full rounded-full bg-[#fae568] py-4 font-bold text-[#1f1f22] shadow-[0_4px_15px_rgba(250,229,104,0.3)] transition-colors hover:bg-[#f0dc59]"
+                        <Link
+                            to="/auth/verification"
+                            className="flex justify-center mt-6 w-full rounded-full bg-[#fae568] py-4 font-bold text-[#1f1f22] shadow-[0_4px_15px_rgba(250,229,104,0.3)] transition-colors hover:bg-[#f0dc59]"
                         >
                             Verificarse
-                        </button>
+                        </Link>
 
                     </form>
                 </div>

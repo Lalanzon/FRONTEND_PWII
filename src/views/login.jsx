@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom"
 export default function Login() {
 
 
@@ -67,22 +67,22 @@ export default function Login() {
             </div>
 
 
-            <button
-              type="submit"
-              className="mt-4 w-full rounded-full bg-[#fae568] py-4 font-bold text-[#1f1f22] shadow-[0_4px_15px_rgba(250,229,104,0.3)] transition-colors hover:bg-[#f0dc59]"
+            <Link
+              to = "/home"
+              className=" flex justify-center mt-4 w-full rounded-full bg-[#fae568] py-4 font-bold text-[#1f1f22] shadow-[0_4px_15px_rgba(250,229,104,0.3)] transition-colors hover:bg-[#f0dc59]"
             >
               Ingresar
-            </button>
+            </Link>
 
 
             <div className="mt-8 text-center text-xs text-gray-600">
               <label htmlFor="cuenta">¿No tienes cuenta? </label>
-              <label
-                htmlFor="registrate"
+              <Link
+                to="/auth/register"
                 className="cursor-pointer font-extrabold text-[#1f1f22] hover:underline"
               >
                 Regístrate
-              </label>
+              </Link>
             </div>
 
           </form>

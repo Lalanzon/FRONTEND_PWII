@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 export default function Verification() {
     return (
         <>
@@ -73,11 +74,13 @@ export default function Verification() {
                         </button>
 
 
-                        <div className="mt-2 text-center text-xs font-bold text-[#1f1f22]">
-                            <label htmlFor="navegar" className="cursor-pointer hover:underline">
-                                Continuar navegando
-                            </label>
-                        </div>
+                        <Link className="mt-2 text-center text-xs font-bold text-[#1f1f22] cursor-pointer hover:underline"
+                            to="/home"
+                        >
+                            
+                            Continuar navegando
+                            
+                        </Link>
 
                     </form>
                 </div>
